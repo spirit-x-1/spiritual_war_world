@@ -18,7 +18,7 @@ function App() {
     <div>
       {/* Banner with space for logo */}
       <div style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
-        <img src="your_logo_url_here" alt="Logo" style={{ width: '200px', height: 'auto' }} />
+        <img src="/logo/sww_logo.png" alt="Logo" style={{ width: '200px', height: 'auto' }} />
       </div>
       
       {/* Main content */}
