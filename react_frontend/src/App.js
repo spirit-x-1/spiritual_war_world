@@ -16,12 +16,20 @@ function App() {
 
   return (
     <div>
-      <h1>Articles</h1>
-      <ul>
-        {articles.map(article => (
-          <li key={article.id}>{article.title}</li>
-        ))}
-      </ul>
+      {/* Banner with space for logo */}
+      <div style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
+        <img src="your_logo_url_here" alt="Logo" style={{ width: '200px', height: 'auto' }} />
+      </div>
+      
+      {/* Main content */}
+      <div>
+        <h1>Articles</h1>
+        <ul>
+          {articles.map(article => (
+            <li key={article.id}>{article.title}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
