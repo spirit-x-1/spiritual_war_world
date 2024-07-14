@@ -8,45 +8,99 @@
 </head>
 <body>
     <header>
-        <h1>News Website</h1>
+        <h1><img src="react_frontend/src/19.png" class="logo"></h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="banner_options">Home</a></li>
+                <li><a href="#" class="banner_options">Articles</a></li>
+                <li><a href="#" class="banner_options">Videos</a></li>
+                <li><a href="#" class="banner_options">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="latest-news">
-            <h2>Latest News</h2>
-            <article>
+        <h1 class="heading">Latest News</h1>
+            <section id="latest-news" class="parent">
+            <article class="latest_news">
                 <h3>Article Title 1</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?london" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#">Read more</a>
             </article>
-            <article>
+            <article class="latest_news">
                 <h3>Article Title 2</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?spain" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="latest_news">
+                <h3>Article Title 3</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?france" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="latest_news">
+                <h3>Article Title 4</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?portugal" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="latest_news">
+                <h3>Article Title 5</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?india" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="latest_news">
+                <h3>Article Title 6</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?china" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="latest_news">
+                <h3>Article Title 7</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?japan" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="latest_news">
+                <h3>Article Title 8</h3>
+                <img class="latest_news-img" src="https://source.unsplash.com/1600x1000/?canada" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#">Read more</a>
             </article>
         </section>
+        <h1 class="heading">Latest Videos</h1>
         <section id="videos">
-            <h2>Latest Videos</h2>
-            <div>
-                <h3>Video Title 1</h3>
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div>
-                <h3>Video Title 2</h3>
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="video">
+                <div class="latest_videos">
+                    <h3>Video Title 1</h3>
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4" class="vid">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="latest_videos">
+                    <h3>Video Title 2</h3>
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4" class="vid">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="latest_videos">
+                    <h3>Video Title 3</h3>
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4" class="vid">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="latest_videos">
+                    <h3>Video Title 4</h3>
+                    <video controls>
+                        <source src="video4.mp4" type="video/mp4" class="vid">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </section>
     </main>
