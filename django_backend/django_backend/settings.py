@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-4uu(kmx5aoz!i_seq*^8!u524s+gdes^(0nstgt=9)%qm(_xvw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['spiritual-war-django-backend-59901685e3ac.herokuapp.com', 'www.yourdomain.com']
 
 # Application definition
 INSTALLED_APPS = [
