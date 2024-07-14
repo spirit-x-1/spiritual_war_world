@@ -26,6 +26,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['spiritual-war-django-backend-59901685e3ac.herokuapp.com', 'www.yourdomain.com']
 
+STATICFILES_DIRS = [
+    '/app/../react_frontend/build/static',
+]
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
