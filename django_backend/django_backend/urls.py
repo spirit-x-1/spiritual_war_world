@@ -17,15 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from api.views import ArticleViewSet
-from api.views import index
 
 router = DefaultRouter()
-router.register(r'articles', ArticleViewSet)
-
 
 urlpatterns = [
          path('admin/', admin.site.urls),
-         path('api/', include(router.urls)),  # Make sure this points to your API URLs
-         path('', index),  # This should be the last URL pattern
-     ]
+         path('api/', include('news_home.urls')),
+         ]
