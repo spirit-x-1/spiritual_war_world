@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -73,13 +74,26 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_backend.wsgi.application'
 
 # Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Determine if running on Heroku
+ON_HEROKU = 'DATABASE_URL' in os.environ
+
+if ON_HEROKU:
+    # Heroku settings
+    DATABASES = {
+        'default': dj_database_url.config(
+            default='postgres://localhost:5432/mydb',  # Fallback if DATABASE_URL is not set
+            conn_max_age=600,
+            ssl_require=True
+        )
     }
-}
+else:
+    # Local development settings
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
